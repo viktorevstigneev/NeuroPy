@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="{{ url_for('static', filename='css/forEditer/rainbow.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <pre contenteditable="true"><code data-language="python" >def openFile(path):
+    file = open(path, "r")
+    content = file.read()
+    file.close()
+    return content</code></pre>
+    <script src="{{ url_for('static', filename='js/rainbow/generic.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rainbow/python.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rainbow/rainbow.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rainbow/rainbow-custom.min.js') }}"></script>
+</body>
+</html>
